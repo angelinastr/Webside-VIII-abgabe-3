@@ -98,9 +98,11 @@
      })
 
      $(window).scroll(function() {
-var theta = $(window).scrollTop() / 10 % Math.PI;
-$('.header-image').css({ transform: 'rotate(' + theta + 'rad)' });
-});
+
+       var theta = $(window).scrollTop() / 100 % Math.PI;
+
+       $('.header-image').css({ transform: 'rotate(' + theta + 'rad)' });
+     });
 
     </script>
 
